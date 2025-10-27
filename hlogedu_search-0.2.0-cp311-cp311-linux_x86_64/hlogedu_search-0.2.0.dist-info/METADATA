@@ -1,0 +1,96 @@
+Metadata-Version: 2.4
+Name: hlogedu-search
+Version: 0.2.0
+Summary: Hlogedu-search project
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: graphviz>=0.20.1
+Requires-Dist: pygame>=2.6.1
+Provides-Extra: dev
+Requires-Dist: mkdocs>=1.6.0; extra == "dev"
+Requires-Dist: mkdocs-material>=9.5.0; extra == "dev"
+Requires-Dist: mkdocstrings[python]>=0.25.1; extra == "dev"
+Requires-Dist: build>=1.3.0; extra == "dev"
+Requires-Dist: mypy>=1.18.2; extra == "dev"
+
+hardlogedu-search
+=================
+
+Educational tool that let you write your own search algorithms and problems,
+or just run your problems using any of the already provided algorithms.
+
+Compiling
+---------
+
+It is recommended to create a virtual environment (for example using `uv`):
+
+```bash
+uv venv
+source .venv/bine/activate
+uv pip install -e . .[dev]
+```
+
+Then you can simply execute the `compile.sh` script:
+
+```bash
+./compile.sh
+```
+
+This will generate a compiled wheel using Nuitka for the python version in the virtual environment.
+It will also generate and include the stubs with the type hints and docstrings.
+
+To cross-compile to the ARM architecture, we have the `Dockerfile`.
+Assuming you are using `podman`, you need to run:
+
+```bash
+podman build --platform=linux/arm64 -t myproject-builder .
+podman create --name extract myproject-builder
+podman cp extract:/dist ./dist
+podman rm extract
+```
+
+You will find inside the `dist/dist` folder the wheel `hlogedu_search-X.X.X-cp311-cp311-linux_aarch64.whl`.
+
+Requirements
+------------
+
+- __Python 3.x__
+
+Apart from the Python 3 interpreter there is no other requirement, but to
+generate a graphical representation of the search graph we recommend using
+the *dot* tool from [Graphviz][graphviz].
+
+Algorithms
+----------
+
+By default the tool looks for algorithms in the directory *algorithms*
+located in the current working directory. Additional search directories
+for algorithms can be specified through the command line options.
+
+#### Default algorithms
+
+To start working with the tool right away, it comes with a basic
+implementation of the most common search algorithms:
+
+- BFS
+- DFS
+- UCS
+- Best-H
+- A*
+
+#### Defining algorithms
+
+...
+
+Problems
+--------
+
+As with the algorithms, the tool looks for problems in the directory
+*problems* located in the current working directory. Additional search
+directories for problems can be specified through the command line options.
+
+#### Defining problems
+
+...
+
+[graphviz]: http://www.graphviz.org/

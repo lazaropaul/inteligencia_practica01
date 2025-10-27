@@ -1,0 +1,2 @@
+[console_scripts]
+hlogedu-search = hlogedu.__main__:main
