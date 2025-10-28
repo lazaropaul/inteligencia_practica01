@@ -63,7 +63,7 @@ class KiwisAndDogsProblem(Problem):
 
     # TODO: Trobar manera de referenciar el cost de graph, he posat A i B com a exemple del que vull fer
     # Movem tots els dogs disponibles, del primer punt possible al segon punt possible, cost definit per graph dinamicament
-    @action(DDRange(0, 'num_dogs'), Categorical(["A", "B", "C", "D", "E", "F", "G"]), cost=1)
+    @action(DDRange(0, 'num_dogs'), Categorical(["A", "B", "C", "D", "E", "F", "G"]))
     def moveDog(self, state, dog_id, dog_to):
         
         dog_from = state.dogs[dog_id]
@@ -71,29 +71,31 @@ class KiwisAndDogsProblem(Problem):
         # Asegurem de que existeix la aresta
         try:
             if self.graph[dog_from, dog_to] is not None:
+                cost = self.graph[(dog_from, dog_to)][0]
                 cond = self.graph[dog_from, dog_to][1] # somebody(C)
+                
                 #Comprovem que hi ha algú al node que hi ha dins del sombody(X)
                 if "somebody" in cond and (cond[-2:-1] in state.kiwis or cond[-2:-1] in state.dogs):
                     # Recordem que no podem modificar una tupla
                     new_dogs = list(state.dogs)
                     new_dogs[dog_id] = dog_to
-                    return State(kiwis=state.kiwis, dogs=tuple(new_dogs))
+                    return (cost, State(kiwis=state.kiwis, dogs=tuple(new_dogs)))
                 
                 if "nobody" in cond and (cond[-2:-1] not in state.kiwis or cond[-2:-1] not in state.dogs):
                     new_dogs = list(state.dogs)
                     new_dogs[dog_id] = dog_to
-                    return State(kiwis=state.kiwis, dogs=tuple(new_dogs))
+                    return (cost, State(kiwis=state.kiwis, dogs=tuple(new_dogs)))
                 
                 if cond == "":
                     new_dogs = list(state.dogs)
                     new_dogs[dog_id] = dog_to
-                    return State(kiwis=state.kiwis, dogs=tuple(new_dogs))
+                    return (cost, State(kiwis=state.kiwis, dogs=tuple(new_dogs)))
                 
         except KeyError:
             return None
 
     # Movem tots els kiwis disponibles, del primer punt possible al segon punt possible, cost definit per graph dinamicament
-    @action(DDRange(0, 'num_kiwis'), Categorical(["A", "B", "C", "D", "E", "F", "G"]), cost=1)
+    @action(DDRange(0, 'num_kiwis'), Categorical(["A", "B", "C", "D", "E", "F", "G"]))
     def moveKiwi(self, state, kiwi_id, kiwi_to):
         
         kiwi_from = state.kiwis[kiwi_id]
@@ -101,23 +103,24 @@ class KiwisAndDogsProblem(Problem):
         try:
             # Asegurem de que existeix la aresta
             if self.graph[kiwi_from, kiwi_to] is not None:
+                cost = self.graph[(kiwi_from, kiwi_to)][0]
                 cond = self.graph[(kiwi_from, kiwi_to)][1] # somebody(C)
                 
                 #Comprovem que hi ha algú al node que hi ha dins del sombody(X)
                 if "somebody" in cond and (cond[-2:-1] in state.kiwis or cond[-2:-1] in state.dogs):
                     new_kiwis = list(state.kiwis)
                     new_kiwis[kiwi_id] = kiwi_to
-                    return State(kiwis=tuple(new_kiwis), dogs=state.dogs)
+                    return (cost, State(kiwis=tuple(new_kiwis), dogs=state.dogs))
                 
                 if "nobody" in cond and (cond[-2:-1] not in state.kiwis or cond[-2:-1] not in state.dogs):
                     new_kiwis = list(state.kiwis)
                     new_kiwis[kiwi_id] = kiwi_to
-                    return State(kiwis=tuple(new_kiwis), dogs=state.dogs)
+                    return (cost, State(kiwis=tuple(new_kiwis), dogs=state.dogs))
                 
                 if cond == "":
                     new_kiwis = list(state.kiwis)
                     new_kiwis[kiwi_id] = kiwi_to
-                    return State(kiwis=tuple(new_kiwis), dogs=state.dogs)
+                    return (cost, State(kiwis=tuple(new_kiwis), dogs=state.dogs))
 
                 return None
             
