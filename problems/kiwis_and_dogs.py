@@ -55,14 +55,18 @@ class KiwisAndDogsProblem(Problem):
         return state == State(
         kiwis=tuple("A" for _ in range(self.num_kiwis)),
         dogs=tuple("E" for _ in range(self.num_dogs))
-        ) # TODO: Ask Edu if this is valid
+        )
 
     def is_valid_state(self, _):
         return True # Asegurem que sigui valid des de les accions
+    
+    def parseCondition(self, condition):
+        if "," in condition:
+            return condition.split(",")
+        return [condition]
 
 
-    # TODO: Trobar manera de referenciar el cost de graph, he posat A i B com a exemple del que vull fer
-    # Movem tots els dogs disponibles, del primer punt possible al segon punt possible, cost definit per graph dinamicament
+    # TODO: Juntar les 2 actions per evitar repetir codi
     @action(DDRange(0, 'num_dogs'), Categorical(["A", "B", "C", "D", "E", "F", "G"]))
     def moveDog(self, state, dog_id, dog_to):
         
@@ -70,28 +74,33 @@ class KiwisAndDogsProblem(Problem):
         
         # Asegurem de que existeix la aresta
         try:
-            if self.graph[dog_from, dog_to] is not None:
-                cost = self.graph[(dog_from, dog_to)][0]
-                cond = self.graph[dog_from, dog_to][1] # somebody(C)
+            #("4", somebody(X))
+            cost = self.graph[(dog_from, dog_to)][0] 
+            condition = self.graph[dog_from, dog_to][1]
+            
+            if condition != "": # Per optimitzar i no haver de pasar pels if's
+                condition = self.parseCondition(self.graph[dog_from, dog_to][1]) # separem les condicions en una llista
                 
-                #Comprovem que hi ha algú al node que hi ha dins del sombody(X)
-                if "somebody" in cond and (cond[-2:-1] in state.kiwis or cond[-2:-1] in state.dogs):
-                    # Recordem que no podem modificar una tupla
-                    new_dogs = list(state.dogs)
-                    new_dogs[dog_id] = dog_to
-                    return (cost, State(kiwis=state.kiwis, dogs=tuple(new_dogs)))
+                for i in range(len(condition)): # Comprovem totes les condicions
+                    at_node = condition[i][-2:-1]
+                    # Si la condició == somebody, comprovem que no hi hagi cap kiwi ni cap gos en el node de la condició ja que si no hi ha ningú, no podem moure, contraexemple aproach
+                    if "somebody" in condition[i] and (at_node not in state.kiwis and at_node not in state.dogs):
+                        return None
                 
-                if "nobody" in cond and (cond[-2:-1] not in state.kiwis or cond[-2:-1] not in state.dogs):
-                    new_dogs = list(state.dogs)
-                    new_dogs[dog_id] = dog_to
-                    return (cost, State(kiwis=state.kiwis, dogs=tuple(new_dogs)))
+                    # Si la condició conté nobody comprovem si hi ha un kiwi o un gos a X, en el cas de que hi hagi, no podem moure 
+                    if "nobody" in condition[i] and (at_node in state.kiwis or at_node in state.dogs):
+                        return None
+                    
+                new_dogs = list(state.dogs)
+                new_dogs[dog_id] = dog_to
+                return (cost, State(kiwis=state.kiwis, dogs=tuple(new_dogs)))
+                    
+            elif condition == "":
+                new_dogs = list(state.dogs)
+                new_dogs[dog_id] = dog_to
+                return (cost, State(kiwis=state.kiwis, dogs=tuple(new_dogs)))
                 
-                if cond == "":
-                    new_dogs = list(state.dogs)
-                    new_dogs[dog_id] = dog_to
-                    return (cost, State(kiwis=state.kiwis, dogs=tuple(new_dogs)))
-                
-        except KeyError:
+        except KeyError: # En el cas de que no existeixi aresta, ex: (A, A)
             return None
 
     # Movem tots els kiwis disponibles, del primer punt possible al segon punt possible, cost definit per graph dinamicament
@@ -102,27 +111,30 @@ class KiwisAndDogsProblem(Problem):
         
         try:
             # Asegurem de que existeix la aresta
-            if self.graph[kiwi_from, kiwi_to] is not None:
-                cost = self.graph[(kiwi_from, kiwi_to)][0]
-                cond = self.graph[(kiwi_from, kiwi_to)][1] # somebody(C)
+            cost = self.graph[(kiwi_from, kiwi_to)][0]
+            condition = self.graph[(kiwi_from, kiwi_to)][1] # somebody(C)
+            
+            #Comprovem que hi ha algú al node que hi ha dins del sombody(X)
+            
+            if condition != "":
+                condition = self.parseCondition(self.graph[(kiwi_from, kiwi_to)][1])
                 
-                #Comprovem que hi ha algú al node que hi ha dins del sombody(X)
-                if "somebody" in cond and (cond[-2:-1] in state.kiwis or cond[-2:-1] in state.dogs):
-                    new_kiwis = list(state.kiwis)
-                    new_kiwis[kiwi_id] = kiwi_to
-                    return (cost, State(kiwis=tuple(new_kiwis), dogs=state.dogs))
-                
-                if "nobody" in cond and (cond[-2:-1] not in state.kiwis or cond[-2:-1] not in state.dogs):
-                    new_kiwis = list(state.kiwis)
-                    new_kiwis[kiwi_id] = kiwi_to
-                    return (cost, State(kiwis=tuple(new_kiwis), dogs=state.dogs))
-                
-                if cond == "":
-                    new_kiwis = list(state.kiwis)
-                    new_kiwis[kiwi_id] = kiwi_to
-                    return (cost, State(kiwis=tuple(new_kiwis), dogs=state.dogs))
-
-                return None
+                for i in range(len(condition)):
+                    node_at = condition[i][-2:-1]
+                    if "somebody" in condition[i] and (node_at not in state.kiwis and node_at not in state.dogs):
+                        return None
+                    
+                    if "nobody" in condition[i] and (node_at in state.kiwis or node_at in state.dogs):
+                        return None
+                    
+                new_kiwis = list(state.kiwis)
+                new_kiwis[kiwi_id] = kiwi_to
+                return (cost, State(kiwis=tuple(new_kiwis), dogs=state.dogs))
+            
+            elif condition == "":
+                new_kiwis = list(state.kiwis)
+                new_kiwis[kiwi_id] = kiwi_to
+                return (cost, State(kiwis=tuple(new_kiwis), dogs=state.dogs))
             
         except KeyError:
             return None
