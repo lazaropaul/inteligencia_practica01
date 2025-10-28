@@ -105,6 +105,8 @@ class NQueensVisualizer(SolutionVisualizer):
 # Problem
 ##############################################################################
 
+# EXAMPLE COMMAND: hlogedu-search run -a hlog-graph-ucs -p NQueensIR -pp n_queens=4 -pp seed=3 -o pygame -op speed=0.5
+
 
 class NQueensIterativeRepair(Problem):
     """N-Queens problem
@@ -137,13 +139,18 @@ class NQueensIterativeRepair(Problem):
         return [tuple(random.randint(0, self.b_size - 1) for _ in range(self.b_size))]
 
     def is_goal_state(self, state):
-        raise NotImplementedError("Implement me!")
+        print(state)
+        return state == tuple(0 for _ in range(self.b_size))
 
     def is_valid_state(self, state):
-        raise NotImplementedError("Implement me!")
+        return True
 
     # Actions go here...
-
+    @action(DDRange(0, 4), cost=1)
+    def move(self, status, movin):
+        n_board = list(status)
+        n_board[movin] = 0
+        return tuple(n_board)
 
 # Heuristic
 ##############################################################################

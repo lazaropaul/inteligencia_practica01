@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from hlogedu.search.problem import Problem, action, Categorical, DDRange
+from hlogedu.search.problem import Problem, action, Categorical, DDRange, Heuristic
 
 
 @dataclass(frozen=True, order=True)
@@ -138,3 +138,10 @@ class KiwisAndDogsProblem(Problem):
             
         except KeyError:
             return None
+        
+# Una heuristica podria ser calcular la distancia entre
+@KiwisAndDogsProblem.heuristic
+class RepairHeuristic(Heuristic):
+
+    def compute(self, state):
+        raise NotImplementedError("Implement me!")
