@@ -53,12 +53,12 @@ class KiwisAndDogsProblem(Problem):
 
     def is_goal_state(self, state):
         return state == State(
-        kiwis=[("A",) for _ in range(self.num_kiwis)],
-        dogs=[("E",) for _ in range(self.num_dogs)]
+        kiwis=tuple("A" for _ in range(self.num_kiwis)),
+        dogs=tuple("E" for _ in range(self.num_dogs))
         ) # TODO: Ask Edu if this is valid
 
     def is_valid_state(self, _):
-        True # Asegurem que sigui valid des de les accions
+        return True # Asegurem que sigui valid des de les accions
 
 
     # TODO: Trobar manera de referenciar el cost de graph, he posat A i B com a exemple del que vull fer
@@ -72,7 +72,6 @@ class KiwisAndDogsProblem(Problem):
         try:
             if self.graph[dog_from, dog_to] is not None:
                 cond = self.graph[dog_from, dog_to][1] # somebody(C)
-                
                 #Comprovem que hi ha algú al node que hi ha dins del sombody(X)
                 if "somebody" in cond and (cond[-2:-1] in state.kiwis or cond[-2:-1] in state.dogs):
                     # Recordem que no podem modificar una tupla
@@ -81,6 +80,11 @@ class KiwisAndDogsProblem(Problem):
                     return State(kiwis=state.kiwis, dogs=tuple(new_dogs))
                 
                 if "nobody" in cond and (cond[-2:-1] not in state.kiwis or cond[-2:-1] not in state.dogs):
+                    new_dogs = list(state.dogs)
+                    new_dogs[dog_id] = dog_to
+                    return State(kiwis=state.kiwis, dogs=tuple(new_dogs))
+                
+                if cond == "":
                     new_dogs = list(state.dogs)
                     new_dogs[dog_id] = dog_to
                     return State(kiwis=state.kiwis, dogs=tuple(new_dogs))
@@ -106,6 +110,11 @@ class KiwisAndDogsProblem(Problem):
                     return State(kiwis=tuple(new_kiwis), dogs=state.dogs)
                 
                 if "nobody" in cond and (cond[-2:-1] not in state.kiwis or cond[-2:-1] not in state.dogs):
+                    new_kiwis = list(state.kiwis)
+                    new_kiwis[kiwi_id] = kiwi_to
+                    return State(kiwis=tuple(new_kiwis), dogs=state.dogs)
+                
+                if cond == "":
                     new_kiwis = list(state.kiwis)
                     new_kiwis[kiwi_id] = kiwi_to
                     return State(kiwis=tuple(new_kiwis), dogs=state.dogs)
