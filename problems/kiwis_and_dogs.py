@@ -70,7 +70,6 @@ class KiwisAndDogsProblem(Problem):
         
         # Asegurem de que existeix la aresta
         try:
-            if self.graph[dog_from, dog_to] is not None:
                 cond = self.graph[dog_from, dog_to][1] # somebody(C)
                 
                 #Comprovem que hi ha algú al node que hi ha dins del sombody(X)
@@ -114,3 +113,7 @@ class KiwisAndDogsProblem(Problem):
             
         except KeyError:
             return None
+        
+        @action(DDRange(0, 1), DDRange(0, 'num_kiwis'), DDRange(0, 'num_dogs'))
+        def move(self, state, kiwi_or_dog, kiwi_id, dog_id):
+            
