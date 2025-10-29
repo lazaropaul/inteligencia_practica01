@@ -109,6 +109,7 @@ class NQueensVisualizer(SolutionVisualizer):
 Command cheat sheet:
     source .venv/bin/activate
     hlogedu-search run -a hlog-graph-ucs -p NQueensIR -pp n_queens=4 -pp seed=3 -o pygame -op speed=0.5
+    hlogedu-search run -a hlog-graph-astar -hf RepairHeuristic -p NQueensIR -o pygame -op speed=0.5
 """
 
 class NQueensIterativeRepair(Problem):
@@ -142,7 +143,7 @@ class NQueensIterativeRepair(Problem):
         return [tuple(random.randint(0, self.b_size - 1) for _ in range(self.b_size))]
 
     def is_goal_state(self, state):
-        #No cal comprovar a columna ja que sempre sera diferent (columna == posició en la llista)
+        #No cal comprovar columna ja que sempre sera diferent (columna == posició en la llista)
         if len(set(state)) != self.b_size: # Si no hi ha duplicats el lenght ha de ser el mateix que la mida del board
             return False
         
@@ -172,5 +173,21 @@ class NQueensIterativeRepair(Problem):
 @NQueensIterativeRepair.heuristic
 class RepairHeuristic(Heuristic):
 
+    #Admissible because each tile needs at least one move to reach its goal position (assuming it's misplaced)
     def compute(self, state):
-        raise NotImplementedError("Implement me!")
+        dup = set()
+        
+        #Check row
+        for i in state:
+            if state.count(i) > 1:
+                dup.add(i)
+        
+        #Check diagonals
+        for i in range(len(state)):
+            for j in range(i + 1, len(state)):
+                if abs(i - j) == abs(state[i] - state[j]):
+                    dup.add(i)
+        
+        return len(dup)
+
+            
