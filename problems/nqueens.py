@@ -175,18 +175,27 @@ class RepairHeuristic(Heuristic):
 
     #Admissible because each tile needs at least one move to reach its goal position (assuming it's misplaced)
     def compute(self, state):
-        dup = set()
+        dup = []
+        print(state)
         
         #Check row
-        for i in state:
-            if state.count(i) > 1:
-                dup.add(i)
+        for i in range(len(state)):
+            print(state.count(i))
+            if state.count(state[i]) > 1:
+                dup.append(i)
+        print("DUB1: " + str(dup))
+        
+        dup = set(dup)
         
         #Check diagonals
         for i in range(len(state)):
             for j in range(i + 1, len(state)):
                 if abs(i - j) == abs(state[i] - state[j]):
-                    dup.add(i)
+                    dup.add(j)
+        
+        print("DUB2: " + str(dup))
+        
+        print("---------------------------------")
         
         return len(dup)
 
