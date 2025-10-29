@@ -19,7 +19,7 @@ class JarsProblem(Problem):
     """
 
     NAME = "Jars"
-
+    
     def __init__(self):
         self.capacities = (5, 3)
         self.n_jars = len(self.capacities)
@@ -93,6 +93,7 @@ class JarsProblem(Problem):
         n_state[jar_s] -= to_pour
         n_state[jar_d] += to_pour
         return tuple(n_state)
+
 
 
 @JarsProblem.heuristic
