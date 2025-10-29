@@ -105,8 +105,11 @@ class NQueensVisualizer(SolutionVisualizer):
 # Problem
 ##############################################################################
 
-# EXAMPLE COMMAND: hlogedu-search run -a hlog-graph-ucs -p NQueensIR -pp n_queens=4 -pp seed=3 -o pygame -op speed=0.5
-
+"""
+Command cheat sheet:
+    source .venv/bin/activate
+    hlogedu-search run -a hlog-graph-ucs -p NQueensIR -pp n_queens=4 -pp seed=3 -o pygame -op speed=0.5
+"""
 
 class NQueensIterativeRepair(Problem):
     """N-Queens problem
@@ -139,18 +142,28 @@ class NQueensIterativeRepair(Problem):
         return [tuple(random.randint(0, self.b_size - 1) for _ in range(self.b_size))]
 
     def is_goal_state(self, state):
-        print(state)
-        return state == tuple(0 for _ in range(self.b_size))
+        #No cal comprovar a columna ja que sempre sera diferent (columna == posició en la llista)
+        if len(set(state)) != self.b_size: # Si no hi ha duplicats el lenght ha de ser el mateix que la mida del board
+            return False
+        
+        # Check diagonals
+        for i in range(self.b_size):
+            for j in range(i + 1, self.b_size):
+                if abs(i - j) == abs(state[i] - state[j]):
+                    return False
+    
+        return True
 
     def is_valid_state(self, state):
         return True
 
     # Actions go here...
-    @action(DDRange(0, 4), cost=1)
-    def move(self, status, movin):
+    @action(DDRange(0, 'n_queens'), DDRange(0, 'b_size'), cost=1)
+    def move(self, status, queenId, boardPos):
         n_board = list(status)
-        n_board[movin] = 0
-        return tuple(n_board)
+        n_board[queenId] = boardPos
+        return tuple(n_board)     
+        
 
 # Heuristic
 ##############################################################################
