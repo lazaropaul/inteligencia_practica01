@@ -1,7 +1,7 @@
-site/
-.venv/
-#./docs/img
 *.svg
 *.png
 *.pyc
 __pycache__/
+site/
+.venv/
+#./docs/img
