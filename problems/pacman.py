@@ -144,6 +144,7 @@ def draw_pacman(surface, center, radius, mouth_angle, direction):
 class PacmanProblem(Problem):
     NAME = "Pacman"
     VISUALIZER = PacmanVisualizer
+    
     PARAMS = [
         ClassParameter(
             "file",
