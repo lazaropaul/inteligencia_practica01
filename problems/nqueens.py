@@ -175,28 +175,45 @@ class RepairHeuristic(Heuristic):
 
     #Admissible because each tile needs at least one move to reach its goal position (assuming it's misplaced)
     def compute(self, state):
-        dup = []
-        print(state)
+        # Contem els conflictes per direcció
+        col_conflicts = 0
+        diag1_conflicts = 0
+        diag2_conflicts = 0
         
-        #Check row
-        for i in range(len(state)):
-            print(state.count(i))
-            if state.count(state[i]) > 1:
-                dup.append(i)
-        print("DUB1: " + str(dup))
+        # Diccionari, contem quantes reines hi ha en cada columna
+        col_counts = {}
+        for col in state: 
+            # Ex: {1: 2, 0: 1, 2: 1}
+            col_counts[col] = col_counts.get(col, 0) + 1
+            
+        for count in col_counts.values(): # Si una columna te N reines en conflicte, hem de moure n-1
+            if count > 1:
+                # Column 1 te 2 reines -> conflicts += (2-1) = 1
+                col_conflicts += count - 1
         
-        dup = set(dup)
+        # Diagonal conflicts
+        diag1_counts = {}
+        diag2_counts = {}
         
-        #Check diagonals
-        for i in range(len(state)):
-            for j in range(i + 1, len(state)):
-                if abs(i - j) == abs(state[i] - state[j]):
-                    dup.add(j)
+        # Les cel·les que tenen el mateix resultat en el calcul vol dir que estan a la mateixa diag
+        # Row 0, Col 0: d1 = 0-0 = 0
+        # Row 3, Col 3: d1 = 3-3 = 0
+        for row in range(len(state)):
+            col = state[row]
+            d1 = row - col
+            d2 = row + col
+            diag1_counts[d1] = diag1_counts.get(d1, 0) + 1
+            diag2_counts[d2] = diag2_counts.get(d2, 0) + 1
         
-        print("DUB2: " + str(dup))
+        for count in diag1_counts.values():
+            if count > 1:
+                diag1_conflicts += count - 1
         
-        print("---------------------------------")
+        for count in diag2_counts.values():
+            if count > 1:
+                diag2_conflicts += count - 1
         
-        return len(dup)
+        # Retornem el maxim, fem admissible (no sobreestima) i "tighter" el bound 
+        return max(col_conflicts, diag1_conflicts, diag2_conflicts)
 
             
