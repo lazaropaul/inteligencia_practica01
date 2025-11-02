@@ -11,7 +11,7 @@ class AStarGraph(Algorithm):
     
     Fem tracking dels estats expandits per evitar revisitar nodes
     """
-    NAME = "my-astar-graph"
+    NAME = "my-graph-astar"
     
     def __init__(self, problem):
         super().__init__(problem)
