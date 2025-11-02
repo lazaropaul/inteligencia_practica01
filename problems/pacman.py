@@ -3,7 +3,7 @@ import math
 
 from typing import Any
 
-from hlogedu.search.problem import Problem, action, Categorical
+from hlogedu.search.problem import Problem, action, Categorical, Heuristic
 from hlogedu.search.visualizer import SolutionVisualizer
 from hlogedu.search.common import ClassParameter
 
@@ -210,3 +210,39 @@ class PacmanProblem(Problem):
         if 0 <= r <= self.rows and 0 <= c <= self.cols and self.grid[r][c] != "%":
             return ((r, c), new_food)
         return None
+
+@PacmanProblem.heuristic
+class EuclideanHeuristic(Heuristic):
+    """
+    Formula: sqrt((x2-x1)^2 + (y2-y1)^2)
+    """
+    
+    def compute(self, state):
+        (pac_r, pac_c), food = state
+        
+        # If food is already eaten, we're at the goal
+        if food is None:
+            return 0
+        
+        food_r, food_c = food
+        
+        # Calculate Euclidean distance
+        return math.sqrt((pac_r - food_r) ** 2 + (pac_c - food_c) ** 2)
+    
+@PacmanProblem.heuristic
+class ManhattanHeuristic(Heuristic):
+    """
+    Formula: |x2-x1| + |y2-y1|
+    """
+    
+    def compute(self, state):
+        (pac_r, pac_c), food = state
+        
+        # If food is already eaten, we're at the goal
+        if food is None:
+            return 0
+        
+        food_r, food_c = food
+        
+        # Calculate Manhattan distance
+        return abs(pac_r - food_r) + abs(pac_c - food_c)

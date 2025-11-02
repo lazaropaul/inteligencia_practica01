@@ -9,11 +9,11 @@ class IDS(Algorithm):
         super().__init__(problem)
         self.fringe = Stack()
     
-    def run(self):
+    def run(self, max_depth):
         depth = 0
         while True:
-            # Reset fringe per cada iteració del depth
-            self.fringe = Stack()
+            # # Reset fringe per cada iteració del depth
+            # self.fringe = Stack()
             expand_counter = 0
             cutoff = False
             
@@ -29,7 +29,7 @@ class IDS(Algorithm):
             while self.fringe:
                 n = self.fringe.pop()
                 
-                if n.depth >= depth:
+                if n.depth >= max_depth:
                     cutoff = True
                 else:
                     expand_counter += 1
@@ -37,15 +37,12 @@ class IDS(Algorithm):
                     n.location = Node.Location.EXPANDED
                     
                     for s, a, c in sorted(
-                        self.problem.get_successors(n.state), key=lambda x: x[0]
-                    ):
+                        self.problem.get_successors(n.state), key=lambda x: x[0]):
                         ns = Node(s, a, cost=n.cost + c, parent=n)
                         n.add_successor(ns)
                         
                         if self.problem.is_goal_state(ns.state):
-                            return Solution(
-                                self.problem, roots, solution_node=ns, cutoff=cutoff
-                            )
+                            return Solution(self.problem, roots, solution_node=ns, cutoff=cutoff)
                         
                         self.fringe.push(ns)
             

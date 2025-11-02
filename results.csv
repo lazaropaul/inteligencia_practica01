@@ -1,0 +1,1541 @@
+Problem,Algorithm,N_Queens,Seed,Output
+NQueens,hlog-graph-ucs,4,1,"Max fringe size: 127
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 113"
+NQueens,hlog-graph-bfs,4,1,"Max fringe size: 77
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 24"
+NQueens,hlog-graph-dfs,4,1,"Max fringe size: 54
+Solution Cost: 8
+Solution Length: 9
+Search nodes expanded: 8"
+NQueens,hlog-tree-ucs,4,1,"Max fringe size: 12486
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 1135"
+NQueens,hlog-tree-bfs,4,1,"Max fringe size: 306
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 28"
+NQueens,hlog-tree-dfs,4,1,""
+NQueens,hlog-tree-astar,4,1,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,4,1,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,4,2,"Max fringe size: 135
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 48"
+NQueens,hlog-graph-bfs,4,2,"Max fringe size: 55
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 10"
+NQueens,hlog-graph-dfs,4,2,"Max fringe size: 20
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 3"
+NQueens,hlog-tree-ucs,4,2,"Max fringe size: 1266
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 115"
+NQueens,hlog-tree-bfs,4,2,"Max fringe size: 108
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 10"
+NQueens,hlog-tree-dfs,4,2,"Max fringe size: 23
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 3"
+NQueens,hlog-tree-astar,4,2,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,4,2,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,4,3,"Max fringe size: 128
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 114"
+NQueens,hlog-graph-bfs,4,3,"Max fringe size: 91
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 33"
+NQueens,hlog-graph-dfs,4,3,"Max fringe size: 117
+Solution Cost: 22
+Solution Length: 23
+Search nodes expanded: 22"
+NQueens,hlog-tree-ucs,4,3,"Max fringe size: 12420
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 1129"
+NQueens,hlog-tree-bfs,4,3,"Max fringe size: 460
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 42"
+NQueens,hlog-tree-dfs,4,3,""
+NQueens,hlog-tree-astar,4,3,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,4,3,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,4,4,"Max fringe size: 122
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 45"
+NQueens,hlog-graph-bfs,4,4,"Max fringe size: 46
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 7"
+NQueens,hlog-graph-dfs,4,4,"Max fringe size: 127
+Solution Cost: 25
+Solution Length: 26
+Search nodes expanded: 25"
+NQueens,hlog-tree-ucs,4,4,"Max fringe size: 1178
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 107"
+NQueens,hlog-tree-bfs,4,4,"Max fringe size: 75
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 7"
+NQueens,hlog-tree-dfs,4,4,""
+NQueens,hlog-tree-astar,4,4,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,4,4,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,4,5,"Max fringe size: 117
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 117"
+NQueens,hlog-graph-bfs,4,5,"Max fringe size: 90
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 27"
+NQueens,hlog-graph-dfs,4,5,"Max fringe size: 125
+Solution Cost: 25
+Solution Length: 26
+Search nodes expanded: 25"
+NQueens,hlog-tree-ucs,4,5,"Max fringe size: 8020
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 729"
+NQueens,hlog-tree-bfs,4,5,"Max fringe size: 339
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 31"
+NQueens,hlog-tree-dfs,4,5,""
+NQueens,hlog-tree-astar,4,5,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,4,5,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,5,1,"Max fringe size: 500
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 78"
+NQueens,hlog-graph-bfs,5,1,"Max fringe size: 81
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 6"
+NQueens,hlog-graph-dfs,5,1,"Max fringe size: 325
+Solution Cost: 29
+Solution Length: 30
+Search nodes expanded: 29"
+NQueens,hlog-tree-ucs,5,1,"Max fringe size: 2851
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 150"
+NQueens,hlog-tree-bfs,5,1,"Max fringe size: 104
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 6"
+NQueens,hlog-tree-dfs,5,1,""
+NQueens,hlog-tree-astar,5,1,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,5,1,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,5,2,"Max fringe size: 1664
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 514"
+NQueens,hlog-graph-bfs,5,2,"Max fringe size: 550
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 104"
+NQueens,hlog-graph-dfs,5,2,"Max fringe size: 566
+Solution Cost: 54
+Solution Length: 55
+Search nodes expanded: 54"
+NQueens,hlog-tree-ucs,5,2,"Max fringe size: 104767
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 5514"
+NQueens,hlog-tree-bfs,5,2,"Max fringe size: 2581
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 136"
+NQueens,hlog-tree-dfs,5,2,""
+NQueens,hlog-tree-astar,5,2,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,5,2,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,5,3,"Max fringe size: 747
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 212"
+NQueens,hlog-graph-bfs,5,3,"Max fringe size: 188
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 24"
+NQueens,hlog-graph-dfs,5,3,"Max fringe size: 421
+Solution Cost: 38
+Solution Length: 39
+Search nodes expanded: 38"
+NQueens,hlog-tree-ucs,5,3,"Max fringe size: 12560
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 661"
+NQueens,hlog-tree-bfs,5,3,"Max fringe size: 446
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 24"
+NQueens,hlog-tree-dfs,5,3,""
+NQueens,hlog-tree-astar,5,3,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,5,3,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,5,4,"Max fringe size: 688
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 171"
+NQueens,hlog-graph-bfs,5,4,"Max fringe size: 116
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 9"
+NQueens,hlog-graph-dfs,5,4,"Max fringe size: 25
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 2"
+NQueens,hlog-tree-ucs,5,4,"Max fringe size: 7563
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 398"
+NQueens,hlog-tree-bfs,5,4,"Max fringe size: 171
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 9"
+NQueens,hlog-tree-dfs,5,4,"Max fringe size: 29
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 2"
+NQueens,hlog-tree-astar,5,4,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,5,4,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,5,5,"Max fringe size: 1154
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 475"
+NQueens,hlog-graph-bfs,5,5,"Max fringe size: 405
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 70"
+NQueens,hlog-graph-dfs,5,5,"Max fringe size: 543
+Solution Cost: 51
+Solution Length: 52
+Search nodes expanded: 51"
+NQueens,hlog-tree-ucs,5,5,"Max fringe size: 61751
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 3250"
+NQueens,hlog-tree-bfs,5,5,"Max fringe size: 1605
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 85"
+NQueens,hlog-tree-dfs,5,5,""
+NQueens,hlog-tree-astar,5,5,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,5,5,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,6,1,"Max fringe size: 23750
+Solution Cost: 4
+Solution Length: 5
+Search nodes expanded: 8469"
+NQueens,hlog-graph-bfs,6,1,"Max fringe size: 9435
+Solution Cost: 4
+Solution Length: 5
+Search nodes expanded: 2829"
+NQueens,hlog-graph-dfs,6,1,"Max fringe size: 16568
+Solution Cost: 1368
+Solution Length: 1369
+Search nodes expanded: 1368"
+NQueens,hlog-tree-ucs,6,1,""
+NQueens,hlog-tree-bfs,6,1,"Max fringe size: 514950
+Solution Cost: 4
+Solution Length: 5
+Search nodes expanded: 17757"
+NQueens,hlog-tree-dfs,6,1,""
+NQueens,hlog-tree-astar,6,1,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,6,1,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,6,2,"Max fringe size: 31250
+Solution Cost: 5
+Solution Length: 6
+Search nodes expanded: 22078"
+NQueens,hlog-graph-bfs,6,2,"Max fringe size: 12393
+Solution Cost: 5
+Solution Length: 6
+Search nodes expanded: 4625"
+NQueens,hlog-graph-dfs,6,2,"Max fringe size: 15794
+Solution Cost: 1308
+Solution Length: 1309
+Search nodes expanded: 1308"
+NQueens,hlog-tree-ucs,6,2,""
+NQueens,hlog-tree-bfs,6,2,""
+NQueens,hlog-tree-dfs,6,2,""
+NQueens,hlog-tree-astar,6,2,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,6,2,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,6,3,"Max fringe size: 7255
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 1241"
+NQueens,hlog-graph-bfs,6,3,"Max fringe size: 1299
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 133"
+NQueens,hlog-graph-dfs,6,3,"Max fringe size: 5621
+Solution Cost: 373
+Solution Length: 374
+Search nodes expanded: 373"
+NQueens,hlog-tree-ucs,6,3,"Max fringe size: 258594
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 8917"
+NQueens,hlog-tree-bfs,6,3,"Max fringe size: 4634
+Solution Cost: 3
+Solution Length: 4
+Search nodes expanded: 160"
+NQueens,hlog-tree-dfs,6,3,""
+NQueens,hlog-tree-astar,6,3,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,6,3,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,6,4,"Max fringe size: 2600
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 367"
+NQueens,hlog-graph-bfs,6,4,"Max fringe size: 277
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 14"
+NQueens,hlog-graph-dfs,6,4,"Max fringe size: 15303
+Solution Cost: 1242
+Solution Length: 1243
+Search nodes expanded: 1242"
+NQueens,hlog-tree-ucs,6,4,"Max fringe size: 24506
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 845"
+NQueens,hlog-tree-bfs,6,4,"Max fringe size: 405
+Solution Cost: 2
+Solution Length: 3
+Search nodes expanded: 14"
+NQueens,hlog-tree-dfs,6,4,""
+NQueens,hlog-tree-astar,6,4,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,6,4,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,6,5,"Max fringe size: 18473
+Solution Cost: 4
+Solution Length: 5
+Search nodes expanded: 9022"
+NQueens,hlog-graph-bfs,6,5,"Max fringe size: 7689
+Solution Cost: 4
+Solution Length: 5
+Search nodes expanded: 1812"
+NQueens,hlog-graph-dfs,6,5,"Max fringe size: 6009
+Solution Cost: 407
+Solution Length: 408
+Search nodes expanded: 407"
+NQueens,hlog-tree-ucs,6,5,""
+NQueens,hlog-tree-bfs,6,5,"Max fringe size: 193537
+Solution Cost: 4
+Solution Length: 5
+Search nodes expanded: 6674"
+NQueens,hlog-tree-dfs,6,5,""
+NQueens,hlog-tree-astar,6,5,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,6,5,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,7,1,"Max fringe size: 124260
+Solution Cost: 4
+Solution Length: 5
+Search nodes expanded: 21725"
+NQueens,hlog-graph-bfs,7,1,"Max fringe size: 25953
+Solution Cost: 4
+Solution Length: 5
+Search nodes expanded: 3465"
+NQueens,hlog-graph-dfs,7,1,"Max fringe size: 35916
+Solution Cost: 1640
+Solution Length: 1641
+Search nodes expanded: 1640"
+NQueens,hlog-tree-ucs,7,1,""
+NQueens,hlog-tree-bfs,7,1,"Max fringe size: 450242
+Solution Cost: 4
+Solution Length: 5
+Search nodes expanded: 10982"
+NQueens,hlog-tree-dfs,7,1,""
+NQueens,hlog-tree-astar,7,1,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,7,1,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,7,2,""
+NQueens,hlog-graph-bfs,7,2,"Max fringe size: 33211
+Solution Cost: 4
+Solution Length: 5
+Search nodes expanded: 4550"
+NQueens,hlog-graph-dfs,7,2,"Max fringe size: 61230
+Solution Cost: 3011
+Solution Length: 3012
+Search nodes expanded: 3011"
+NQueens,hlog-tree-ucs,7,2,""
+NQueens,hlog-tree-bfs,7,2,"Max fringe size: 603963
+Solution Cost: 4
+Solution Length: 5
+Search nodes expanded: 14731"
+NQueens,hlog-tree-dfs,7,2,""
+NQueens,hlog-tree-astar,7,2,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-astar,7,2,"usage: hlogedu-search run [-h] [-pd PROBLEMS_DIR] [-ad ALGORITHMS_DIR]
+                          [-v {0,1,2,3,4}] -a ALGORITHM [-md MAX_DEPTH]
+                          [-hf HEURISTIC] [-o OUTPUTTER]
+                          [-op OUTPUTTER_PARAMETER] -p PROBLEM
+                          [-pp PROBLEM_PARAMETER]
+
+options:
+  -h, --help            show this help message and exit
+  -pd PROBLEMS_DIR, --problems_dir PROBLEMS_DIR
+                        Directory that contains python files with problems
+                        definitions.
+  -ad ALGORITHMS_DIR, --algorithms_dir ALGORITHMS_DIR
+                        Directory that contains python files with algorithms
+                        definitions.
+  -v {0,1,2,3,4}, --verbose {0,1,2,3,4}
+                        Verbosity level.
+  -a ALGORITHM, --algorithm ALGORITHM
+                        Algorithm to run.
+  -md MAX_DEPTH, --max_depth MAX_DEPTH
+                        Algorithm max_depth parameter. If the algorithm does
+                        not support this parameter it will be ignored.
+  -hf HEURISTIC, --heuristic HEURISTIC
+                        Algorithm heuristic function parameter. In some it
+                        will be unnecessary or optional, in others it will be
+                        mandatory.
+  -o OUTPUTTER, --outputter OUTPUTTER
+                        Solution outputter.
+  -op OUTPUTTER_PARAMETER, --outputter_parameter OUTPUTTER_PARAMETER
+                        Parameter passed to the outputter, it can be specified
+                        more than once. The format is: parameter=value
+  -p PROBLEM, --problem PROBLEM
+                        Problem to solve.
+  -pp PROBLEM_PARAMETER, --problem_parameter PROBLEM_PARAMETER
+                        Parameter passed to the problem, it can be specified
+                        more than once. The format is parameter=value"
+NQueens,hlog-graph-ucs,7,3,"Max fringe size: 54697
+Solution Cost: 4
+Solution Length: 5
+Search nodes expanded: 10208"
+NQueens,hlog-graph-bfs,7,3,"Max fringe size: 9325
+Solution Cost: 4
+Solution Length: 5
+Search nodes expanded: 960"

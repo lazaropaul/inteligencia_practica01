@@ -108,7 +108,7 @@ class NQueensVisualizer(SolutionVisualizer):
 """
 Command cheat sheet:
     source .venv/bin/activate
-    hlogedu-search run -a hlog-graph-ucs -p NQueensIR -pp n_queens=4 -pp seed=3 -o pygame -op speed=0.5
+    hlogedu-search run -a hlog-graph-ucs -p NQueensIR -pp n_queens=4 -pp seed=3
     hlogedu-search run -a hlog-graph-astar -hf RepairHeuristic -p NQueensIR -o pygame -op speed=0.5
 """
 
@@ -158,12 +158,13 @@ class NQueensIterativeRepair(Problem):
     def is_valid_state(self, state):
         return True
 
-    # Actions go here...
     @action(DDRange(0, 'n_queens'), DDRange(0, 'b_size'), cost=1)
     def move(self, status, queenId, boardPos):
+        if status[queenId] == boardPos:  # Skip if queen already there
+            return None
         n_board = list(status)
         n_board[queenId] = boardPos
-        return tuple(n_board)     
+        return tuple(n_board) 
         
 
 # Heuristic
